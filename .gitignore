@@ -25,3 +25,7 @@ Thumbs.db
 build/
 dist/
 *.egg-info/
+
+# todo file
+todo.txt
+
