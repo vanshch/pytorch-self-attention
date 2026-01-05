@@ -2,6 +2,8 @@
 
 This project is a minimal interactive demo of a self-attention mechanism implemented in PyTorch and visualized with Streamlit.
 
+![Homepage](assets/homepage.png)
+
 The core components are:
 
 - `attention.py`: Defines a simple self-attention layer (`Attention`) and a toy tokenizer (`SampleTokenizer`).
@@ -35,6 +37,20 @@ streamlit run main.py
 ```
 
 Then open the URL shown in the terminal (usually `http://localhost:8501`).
+
+## Demo Screenshots
+
+### Vocabulary Table
+
+The tokenizer builds a vocabulary from your input sentence:
+
+![Vocabulary](assets/vocab.png)
+
+### Attention Heatmap
+
+Visualize the self-attention scores between tokens:
+
+![Heatmap](assets/heatmap.png)
 
 ## Files overview
 
