@@ -40,7 +40,7 @@ if st.button("Process Sentence"):
         tokenizer = SampleTokenizer(user_sentence, hidden_dim)
         attention_layer = Attention(dim_in=hidden_dim, dim_out=hidden_dim)
         output = tokenizer.embedded.unsqueeze(0)
-        attention_score = attention_layer.forward(output)
+        output_scores,attention_score = attention_layer.forward(output)
 
         st.subheader("Results")
 

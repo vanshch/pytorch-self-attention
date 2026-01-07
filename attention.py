@@ -32,7 +32,7 @@ class Attention(nn.Module):
         scores = torch.matmul(self.queries, self.keys.transpose(-2, -1)) / self.scale 
         scores = F.softmax(scores, dim=-1)
         output = torch.matmul(scores, self.values)
-        return scores
+        return scores,output
 
 
 class MultiheadAttention(nn.Module):
